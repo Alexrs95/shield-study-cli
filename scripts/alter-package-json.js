@@ -10,7 +10,8 @@ var dir = process.argv[3];
 
 var p = require(jsonPath);
 
-var oldName = 'shield-studies-addon-template';
+
+var oldName = 'shield-study-name';
 const newName = dir.startsWith('shield-study-') ? dir : `shield-study-${dir}`;
 
 p.version = '1.0.0';
@@ -19,14 +20,6 @@ p.author = 'Unknown';
 p.name = newName;
 p.license = 'MPL-2.0';
 p.description = '<some feature> as a Shield Study';
-p.homepage = p.homepage.replace(oldName, dir);
-
-//
-[ 'bugs',
-  'repository'
-].forEach( (k) => {
-  p[k].url = p[k].url.replace(oldName, dir);
-});
 
 const fs = require('fs');
 fs.writeFileSync(jsonPath, JSON.stringify(p, null, 2));

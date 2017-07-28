@@ -1,24 +1,20 @@
 {
-  "name": "shield-study-cli",
+  "name": "shield-cli",
   "description": "CLI for Shield Study Mozilla Addons",
-  "version": "1.4.0",
-  "author": "Gregg Lind <glind@mozilla.com>",
+  "version": "1.0.0",
+  "author": "Alejandro Rodriguex <arodriguez@mozilla.com>",
   "bin": {
     "shield": "./index.js"
   },
   "bugs": {
-    "url": "https://github.com/mozilla/shield-study-cli/issues"
+    "url": "https://github.com/alexrs95/shield-study-cli/issues"
   },
   "dependencies": {
     "chalk": "^1.1.3",
     "clim": "^1.1.1",
     "commander": "^2.9.0",
     "firefox-profile": "^0.4.0",
-    "jpm": "^1.1.4",
-    "jsonfile": "^2.3.1",
-    "merge": "^1.2.0",
-    "shelljs-nodecli": "^0.1.1",
-    "tempfile": "^1.1.1"
+    "shelljs-nodecli": "^0.1.1"
   },
   "devDependencies": {
     "depcheck": "^0.6.4",
@@ -29,7 +25,7 @@
   "engines": {
     "node": ">=6"
   },
-  "homepage": "https://github.com/mozilla/shield-study-cli#readme",
+  "homepage": "https://github.com/alexrs95/shield-study-cli#readme",
   "keywords": [
     "addon",
     "cli",
@@ -41,7 +37,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mozilla/shield-study-cli.git"
+    "url": "git+https://github.com/alexrs95/shield-study-cli.git"
   },
   "scripts": {
     "lint": "npm-run-all lint:*",

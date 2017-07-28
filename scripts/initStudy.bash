@@ -3,7 +3,7 @@ set -o nounset
 set -o errexit
 
 ADDON=$1
-URL=https://github.com/mozilla/shield-studies-addon-template
+URL=https://github.com/alexrs95/shield-studies-addon-template
 
 git clone --depth 1  $URL "$1" >> /dev/null
 
@@ -20,16 +20,12 @@ git commit -m "Initial commit, from shield-studies-addon-template" >> /dev/null
 
 echo "
 # Success: Shield Study created
-- from:  mozilla/shield-studies-addon-template
+- from:  alexrs95/shield-studies-addon-template
 - to:    '$1'
 
 ## Next Steps
 
 - cd '$1'
-- npm install --progress
-- edit .git/config
-
-## How To Shield Study
-
-  https://github.com/mozilla/shield-studies-addon-utils/blob/master/howToShieldStudy.md
+- npm install
+- npm run build
 "
